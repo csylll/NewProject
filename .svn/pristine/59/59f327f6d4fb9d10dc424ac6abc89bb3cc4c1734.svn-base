@@ -50,13 +50,13 @@
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas" style='overflow:hidden;'>
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
-        <li><a href="###" onclick="iframeqh('MyHome.jsp')"><span class="am-icon-home"></span> 首页</a></li>
+        <li><a href="admin-index.html"><span class="am-icon-home"></span> 首页</a></li>
         
         <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-file"></span> Bug管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-            <li><a href="###" onclick="iframeqh('http://www.baidu.com')" class="am-cf"><span class="am-icon-check"></span> 新建Bug<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
-            <li><a href="###" onclick="iframeqh('http://mail.qq.com')"><span class="am-icon-puzzle-piece"></span>查看Bug</a></li>
+            <li><a href="admin-user.html" class="am-cf"><span class="am-icon-check"></span> 新建Bug<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
+            <li><a href="admin-help.html"><span class="am-icon-puzzle-piece"></span>查看Bug</a></li>
           </ul>
         </li>
           <li class="admin-parent">
@@ -102,7 +102,7 @@
 
 <!--  加载右侧主界面start-->
 <div class="admin-content" style='overflow:hidden;'>
-<iframe src="MyHome.jsp" id="iframe" style="width:100%;height:100%;border:0; marginwidth:0; marginheight:0;scrolling:no;"    ></iframe>
+<iframe src="MyHome.jsp"  style="width:100%;height:100%;border:0; marginwidth:0; marginheight:0;scrolling:no;"    ></iframe>
 </div>
 <!--  加载右侧主界面end-->
 
@@ -114,15 +114,5 @@
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/amazeui.min.js"></script>
 <script src="../js/app.js"></script>
-<script type="text/javascript">
-function iframeqh(a){
-	$('#iframe').attr('src',a)
-}
-
-
-
-
-
-</script>
 </body>
 </html>
